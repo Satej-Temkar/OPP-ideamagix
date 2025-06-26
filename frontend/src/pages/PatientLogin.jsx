@@ -29,7 +29,7 @@ export const PatientLogin = () => {
       localStorage.setItem("illnessHistory", res.data.patient.illnessHistory);
       localStorage.setItem("profilePicture", res.data.patient.profilePicture);
 
-      window.location.href = "/patient/dashboard";
+      navigate("/patient/dashboard");
     } catch (err) {
       alert(err.response.data.msg);
     }
