@@ -59,12 +59,13 @@ export const PatientSignup = () => {
               placeholder="Email"
               onChange={(e) => setForm({ ...form, email: e.target.value })}
             />
-             <input
+            <input
             className="form-input"
-              type="text"
-              placeholder="Phone"
-              onChange={(e) => setForm({ ...form, phone: e.target.value })}
+              type="password"
+              placeholder="Password"
+              onChange={(e) => setForm({ ...form, password: e.target.value })}
             />
+            
           </div>
           <div className="form-group d-flex">
             <input
@@ -86,11 +87,11 @@ export const PatientSignup = () => {
           </div>
           
           <div className="form-group d-flex">
-            <input
+             <input
             className="form-input"
-              type="password"
-              placeholder="Password"
-              onChange={(e) => setForm({ ...form, password: e.target.value })}
+              type="text"
+              placeholder="Phone"
+              onChange={(e) => setForm({ ...form, phone: e.target.value })}
             />
             <input
             className="form-input"
