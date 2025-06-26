@@ -21,7 +21,7 @@ const ConsultationForm = ({ doctorId }) => {
 
   const handleSubmit = async () => {
     try {
-      await axios.post("http://localhost:5000/api/consultation/submit", form);
+      await axios.post("https://opp-ideamagix-backend.onrender.com/api/consultation/submit", form);
       alert("Consultation submitted");
       window.location.href = "/patient/dashboard";
     } catch (err) {
