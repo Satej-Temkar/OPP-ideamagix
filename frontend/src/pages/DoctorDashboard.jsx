@@ -39,7 +39,7 @@ const DoctorDashboard = () => {
         <div className="account-wrapper">
           <div className="account-profile">
             <img
-             src={`http://localhost:5000/uploads/${profilePicture}`} alt={name}
+             src={`https://opp-ideamagix-backend.onrender.com/uploads/${profilePicture}`} alt={name}
             />
             <div className="blob-wrap">
               <div className="blob" />
