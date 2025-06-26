@@ -1,0 +1,7 @@
+.d-flex{
+    display: flex;
+    gap: 10px
+}
+.mt-2{
+    margin-top: 20px;
+}
