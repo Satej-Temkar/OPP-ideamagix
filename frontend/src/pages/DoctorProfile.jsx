@@ -9,7 +9,7 @@ export default function DoctorProfile() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/prescription/consultations/${doctorId}`)
+      .get(`https://opp-ideamagix-backend.onrender.com/api/prescription/consultations/${doctorId}`)
       .then((res) => setConsults(res.data))
       .catch(console.error());
   });
