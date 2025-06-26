@@ -8,7 +8,7 @@ export default function PrescriptionPanel() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/prescription/doctor/${doctorId}`)
+      .get(`https://opp-ideamagix-backend.onrender.com/api/prescription/doctor/${doctorId}`)
       .then(res => setPrescs(res.data))
       .catch(console.error);
   },);
@@ -20,10 +20,10 @@ export default function PrescriptionPanel() {
         {prescs.map(p => (
           <li key={p._id} style={{ marginBottom: "10px" }}>
             Consultation: {p.consultationId._id} —
-            <button onClick={() => window.open(`http://localhost:5000/uploads/${p.pdfFilename}`, "_blank")}>
+            <button onClick={() => window.open(`https://opp-ideamagix-backend.onrender.com/uploads/${p.pdfFilename}`, "_blank")}>
               View PDF
             </button>
-            <button onClick={() => saveAs(`http://localhost:5000/uploads/${p.pdfFilename}`, p.pdfFilename)}>
+            <button onClick={() => saveAs(`https://opp-ideamagix-backend.onrender.com/uploads/${p.pdfFilename}`, p.pdfFilename)}>
               Download
             </button>
           </li>
