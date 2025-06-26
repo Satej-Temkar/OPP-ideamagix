@@ -15,7 +15,7 @@ export default function PrescribeForm() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/prescription/doctor/${doctorId}`)
+      .get(`https://opp-ideamagix-backend.onrender.com/api/prescription/doctor/${doctorId}`)
       .then((res) => {
         const ex = res.data.find(
           (p) => p.consultationId._id === consultationId
@@ -27,7 +27,7 @@ export default function PrescribeForm() {
 
   const handleSubmit = () => {
     axios
-      .post("http://localhost:5000/api/prescription/submit", {
+      .post("https://opp-ideamagix-backend.onrender.com/api/prescription/submit", {
         consultationId,
         doctorId,
         patientId,
