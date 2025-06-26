@@ -23,7 +23,7 @@ export const PatientSignup = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/patient/register",
+        "https://opp-ideamagix-backend.onrender.com/api/patient/register",
         data
       );
       alert(res.data.msg);
