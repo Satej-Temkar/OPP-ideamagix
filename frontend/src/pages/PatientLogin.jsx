@@ -13,7 +13,7 @@ export const PatientLogin = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/patient/login",
+        "https://opp-ideamagix-backend.onrender.com/api/patient/login",
         form
       );
       localStorage.setItem("token", res.data.token);
