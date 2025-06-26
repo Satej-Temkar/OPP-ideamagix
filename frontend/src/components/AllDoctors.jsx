@@ -9,7 +9,7 @@ const AllDoctors = () => {
     const fetchDoctors = async () => {
       try {
         ``;
-        const res = await axios.get("http://localhost:5000/api/all");
+        const res = await axios.get("https://opp-ideamagix-backend.onrender.com/api/all");
         setDoctors(res.data);
       } catch (err) {
         alert("Failed to fetch doctors", err);
@@ -31,7 +31,7 @@ const AllDoctors = () => {
               <div className="destination-profile">
                 <img
                   className="profile-img"
-                  src={`http://localhost:5000/uploads/${doc.profilePicture}`}
+                  src={`https://opp-ideamagix-backend.onrender.com/uploads/${doc.profilePicture}`}
                   alt={doc.name}
                 />
                 <div className="destination-length">
