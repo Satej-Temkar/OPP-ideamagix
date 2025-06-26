@@ -11,7 +11,7 @@ const DoctorLogin = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/doctor/login",
+        "https://opp-ideamagix-backend.onrender.com/api/doctor/login",
         form
       );
       const doc = res.data.doctor;
